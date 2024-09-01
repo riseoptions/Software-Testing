@@ -70,3 +70,49 @@ Pytest pakub laia valikut testimismeetodeid:
 def test_sum():
     assert 1 + 1 == 2
 ```
+
+```python
+import unittest
+
+# Funktsioon, mida testime
+def add(a, b):
+    return a + b
+
+# Testide klass kasutades unittest raamistiku
+class TestAddFunction(unittest.TestCase):
+
+    def test_add_integers(self):
+        self.assertEqual(add(1, 2), 3)
+
+    def test_add_strings(self):
+        self.assertEqual(add('a', 'b'), 'ab')
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+```python
+# Funktsioon, mida testime
+def subtract(a, b):
+    return a - b
+
+# Testide funktsioon kasutades pytest raamistiku
+def test_subtract():
+    assert subtract(5, 3) == 2
+    assert subtract(10, 5) == 5
+    assert subtract(0, 0) == 0
+
+```
+
+```python
+# Funktsioon, mida testime
+def multiply(a, b):
+    return a * b
+
+# Lihtne assert avaldus, mis kontrollib tulemusi
+assert multiply(2, 3) == 6
+assert multiply(5, 0) == 0
+assert multiply(-1, 5) == -5
+
+```

@@ -63,7 +63,7 @@ Pytest pakub laia valikut testimismeetodeid:
 ## Pytest'i Kasutamine
 
 - **Kuidas Alustada?**: Pytest'i installimine ja kasutamine on lihtne. Seda saab paigaldada Python'i pakihalduri `pip` abil.
-- **Näide**: Vaatame, kuidas luua ja käivitada lihtne test Pytest'iga.
+- **Näide**: Vaatame näiteid, kuidas luua ja käivitada lihtne test Pytest'iga.
 
 ```python
 # test_example.py

@@ -29,4 +29,44 @@ Erinevaid testimise meetodeid on palju. Siin on mõned levinumad:
 ## `unittest` – Sisseehitatud Testimisraamistik
 
 - **Mis on `unittest`?**: `unittest` on Python'i sisseehitatud testimisraamistik, mis on mõeldud üksikute testide loomiseks.
-- **Kasutamine**: Vaatame näidet `unittest` kasutamisest.
+- **Kasutamine**: Vaatame näiteid `unittest` kasutamisest.
+
+
+# Pytest
+
+**Pytest** on populaarne ja paindlik testimisraamistik Python'i keeles, mis lihtsustab testide loomist ja käivitamist. See pakub mitmeid võimsaid funktsioone, et aidata arendajatel kirjutada ja hallata teste efektiivselt.
+
+## Põhiomadused
+
+- **Lihtne Kasutamine**: Pytest on tuntud oma lihtsa ja selge süntaksi poolest, mis muudab testide kirjutamise intuitiivseks ja kiireks.
+- **Täiendav Tugi**: Toetab mitmeid testimismeetodeid, sealhulgas üksikteste, integratsiooniteste ja jõudlusteste.
+- **Täpne Vigade Raporteerimine**: Pakub üksikasjalikke ja selgeid vigade aruandeid, mis aitavad kiirelt leida ja parandada probleeme.
+- **Kohandatavus**: Pytest võimaldab testide käitumist kohandada ja laiendada pluginate ja konfigureerimise kaudu.
+- **Automatiseerimine**: Automatiseeritud testide käivitamine ja koodi katvuse mõõtmine on lihtne ja mugav.
+
+## Miks on see oluline?
+
+- **Tõhus Testimine**: Pytest muudab testimise tõhusaks, isegi suurte ja keerukate koodibaaside korral.
+- **Koodikvaliteet**: Regulaarne testimine aitab tagada koodi kvaliteedi ja töökindluse.
+- **Kiirem Arendus**: Automaatsete testide abil saab kiiremini avastada ja parandada vigasid, mis kiirendab arendusprotsessi.
+- **Paindlikkus**: Pytest toetab erinevaid testimisstrateegiaid ja -meetodeid, andes arendajatele paindlikkuse testimisprotsesside kohandamisel.
+
+## Testimise meetodid
+
+Pytest pakub laia valikut testimismeetodeid:
+- **Ühiktestid** – Testivad üksikute funktsioonide ja koodilõikude tööd.
+- **Integratsioonitestid** – Kontrollivad, kuidas erinevad süsteemi osad koostöös töötavad.
+- **Jõudluse testid** – Hinnatakse rakenduse jõudlust ja efektiivsust.
+- **Turvalisuse testid** – Uurivad turvavea ja haavatavuste olemasolu.
+- **Süsteemi testid** – Testivad kogu süsteemi funktsionaalsust ja integreeritust.
+
+## Pytest'i Kasutamine
+
+- **Kuidas Alustada?**: Pytest'i installimine ja kasutamine on lihtne. Seda saab paigaldada Python'i pakihalduri `pip` abil.
+- **Näide**: Vaatame, kuidas luua ja käivitada lihtne test Pytest'iga.
+
+```python
+# test_example.py
+def test_sum():
+    assert 1 + 1 == 2
+```
